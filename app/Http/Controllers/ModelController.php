@@ -17,6 +17,6 @@ class ModelController extends Controller
             'texto'=>$texto,
 
         ]);
-        return redirect()->route('index',['enviado'=>1]);
+        return redirect()->route('index')->with('alert');
     }
 }
