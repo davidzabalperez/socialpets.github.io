@@ -1,6 +1,8 @@
 @extends('layouts.layout')
 @section('title','socialpets')
 
+<!-- donde quires que vaya y lo que quieres -->
+
 @section('content')
 <div class="content">
         <section class="header parallax home-parallax page" id="HOME">
@@ -74,19 +76,20 @@
                                             </div>
                                             <div class="modal-body">
                                             
-                                            <form action="" method="post" class="form-signin" onsubmit="return validation()" >
+                                            <form action="/login" method="post" class="form-signin">
                                                 @csrf
                                                     <div class="form-label-group">
                                                             <label>Nombre</label>
                                                             <input type="text" name="nombre" class="form-control" placeholder="nombre" required>
                                                         </div>
                                                         <label>Email</label>
-                                                    <input type="text" name="email" id="email"class="form-control" placeholder="Correo electronico" required autofocus>
+                                                    <input type="email" name="email" class="form-control" placeholder="Correo electronico" required autofocus>
                                                     </div>
-                                                    <div class="modal-footer">
+                                                </form>
+                                            <div class="modal-footer">
                                             <button class="btn home-btn wow fadeInLeft enviar" type="submit" name="login">Log in</button>
                                                 <p>No estas logeado? <a>Registrate</a></p>
-                                                </form>
+                                            
                                             </div>
                                             </div>
                                         </div>
@@ -349,4 +352,14 @@
                     </div>
             </section>
 </div>
+@endsection
+
+@section('enviado')
+    @if (session('alert'))
+        <script type="text/javascript">
+        function enviado() {
+            alert("enviado");
+        }
+        </script>
+    @endif
 @endsection

@@ -22,7 +22,11 @@ URL: http://designscrazed.org/
   13. SECTION FOOTER 
 
 */
+.modalCenter{
+    top:50%;
+    transform: translateY(-50%);
 
+}
 .enviar{
     margin-left: 10%;
 }
