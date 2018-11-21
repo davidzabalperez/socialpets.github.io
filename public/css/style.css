@@ -135,6 +135,7 @@ p {
         -moz-transition: all 1s;
         -o-transition: all 1s;
         transition: all 1s;
+        color: white;
     }
     .navbar-nav>li>a {
         padding-top: 45px;
@@ -883,4 +884,7 @@ select:-webkit-autofill {
     width: 33px;
     height: 33px;
     background-position: -355px -260px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
 }
