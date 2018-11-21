@@ -31,12 +31,12 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-    <!-- Style -->
-    <link href="css/style.css" rel="stylesheet">
 
     <link href="css/animate.css" rel="stylesheet">
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
 
 
 </head>
@@ -101,6 +101,7 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/emailvalidate.js"></script>
 
 	</footer>
     @yield('enviado')  

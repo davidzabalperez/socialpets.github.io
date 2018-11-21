@@ -864,3 +864,23 @@ select:-webkit-autofill {
         -webkit-transform: scale(1.0);
     }
 }
+.icon{
+    background-image:url(../images/material-sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#nombre-icon{
+    width: 33px;
+    height: 33px;
+    background-position: 0px -62px;
+}
+#email-icon{
+    width: 33px;
+    height: 33px;
+    background-position: -323px -0px;
+}
+#text-icon{
+    width: 33px;
+    height: 33px;
+    background-position: -355px -260px;
+}

@@ -9,9 +9,6 @@ function validation() {
     if(!valor_email || punto<arroba+2 || punto+2 == vallor_email.length) {
         alert("Email erroneo");
         return false;
-    }else if(){
-        //numero arrobas
-        //que solo halla puntos y @
     }else{
         alert("logeado!");
     }

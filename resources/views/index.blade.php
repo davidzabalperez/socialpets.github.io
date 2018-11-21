@@ -27,7 +27,12 @@
                                     <li><a href="#HOME">HOME</a> </li>
                                     <li><a href="#ABOUT">ACERCA DE</a> </li>
                                     <li><a href="#FEATURES">CARACTERISTICAS</a></li>
-                                    <li><a href="#LOGIN">LOG IN</a></li>
+                                    <li><a href="#LOGIN">CONTACTO</a></li>
+                                    <li class="dropdown-toggle" data-toggle="dropdown"><a href="#">CONTACTO</a></li>
+                                    <ul class="dropdown-menu dropdown">
+                                        <li>opciones</li>
+                                        <li>opciones</li>
+                                    </ul>
                                 </ul>
                             </div>
                             <!-- /.navbar-collapse -->
@@ -74,7 +79,7 @@
                                             </div>
                                             <div class="modal-body">
                                             
-                                            <form action="" method="post" class="form-signin" onsubmit="return validation()" >
+                                            <form method="post" class="form-signin" onsubmit="return validation()" >
                                                 @csrf
                                                     <div class="form-label-group">
                                                             <label>Nombre</label>
@@ -329,14 +334,15 @@
                               <form action="/contacto" method="get" class="form-signin">
                               @csrf
                                 <div class="form-label-group">
-                                        <label>Nombre</label>
-                                        <input type="text" name="nombre" class="form-control" placeholder="nombre" required>
-                                    </div>
-                                    <label>Email</label>
+                                <i class="icon" id="nombre-icon"></i><label>Nombre</label>
+                                    <input type="text" name="nombre" class="form-control" placeholder="nombre" required>
+                                </div>
+                                <i class="icon" id="email-icon"></i><label>Email</label> 
                                   <input type="email" name="email" class="form-control" placeholder="Correo electronico" required autofocus>
                                 </div>
                                 <div class="form-group">
                                     <br>
+                                    <i class="icon" id="text-icon"></i><label>Texto</label>
                                     <textarea name="texto" class="form-control" placeholder="Que necesitas saber?" rows="5"></textarea>
                                   </div>
                                <button class="btn home-btn wow fadeInLeft enviar" type="submit" name="enviar">Enviar</button>
