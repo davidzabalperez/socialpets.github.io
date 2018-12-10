@@ -354,5 +354,27 @@
                       </div>
                     </div>
             </section>
+            <section id="FEATURES" class="page">
+                <div class="col-md pokemon">
+                <video autoplay loop public  mute id="myVideo">
+                    <source src="videos/pokemon.mp4" type="video/mp4">
+                </video>
+                <br>
+                <button id="myBtn" onclick="playPause()" class="btn home-btn wow fadeInLeft ">PAUSE</button>
+                <button id="myBtn" onclick="makeBig()" class="btn home-btn wow fadeInLeft ">BIG</button>
+                <button id="myBtn" onclick="makeNormal()" class="btn home-btn wow fadeInLeft ">NORMAL</button>
+                <button id="myBtn" onclick="makeSmall()" class="btn home-btn wow fadeInLeft ">SMALL</button>
+                
+                </div>
+                <br>
+                <div class="col pokemon">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/DuoCd7UEkpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>ymZ7vqY">
+                </iframe>
+                </div>
+           
+            </section>
 </div>
+<script>
+
+</script> 
 @endsection

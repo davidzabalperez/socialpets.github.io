@@ -569,6 +569,9 @@ div.carousel-inner .item img {
     background-size: cover;
     height: 600px;
 }
+.pokemon{
+    margin-left: 30%;
+}
 .fun_facts .section_overlay {
     padding-top: 120px;
     padding-bottom: 120px;
